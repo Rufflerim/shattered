@@ -1,2 +1,2 @@
 # shattered
-Shattered gane project, unreal
+Shattered game project, Unreal.
