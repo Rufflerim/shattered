@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Vehicle.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class SHATTERED_API AVehicle : public ACharacter
 {
 	GENERATED_BODY()
@@ -19,6 +19,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int peopleOnBoard;
+
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
